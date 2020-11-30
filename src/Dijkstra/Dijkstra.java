@@ -4,14 +4,18 @@ import Greedy.Tuple;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.*;
 
 public class Dijkstra {
 
 
     public String solve() throws FileNotFoundException {
-        File in = new File("C:\\Users\\Bean\\Desktop\\dataset7.in");
-        Scanner sc = new Scanner(in);
+
+
+       // File in = new File("C:\\Users\\Bean\\Desktop\\dataset7.in");
+        InputStream input = getClass().getResourceAsStream("dataset7.in");
+        Scanner sc = new Scanner(input);
         /*
          * We already parse the input for you and should not need to make changes to this part of the code.
          * You are free to change this input format however.
@@ -32,7 +36,6 @@ public class Dijkstra {
             int cost = sc.nextInt();
             nodes.get(u).put(v, cost);
         }
-
 
 
         // TODO

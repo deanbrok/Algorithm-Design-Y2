@@ -2,6 +2,7 @@ package Greedy;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.*;
 
 
@@ -9,8 +10,8 @@ class TrainRouting {
     public String solve() throws FileNotFoundException {
 
         //Extract information out of the document
-        File in = new File("C:\\Users\\Bean\\Desktop\\example.in");
-        Scanner scanner = new Scanner(in);
+        InputStream input = getClass().getResourceAsStream("example.in");
+        Scanner scanner = new Scanner(input);
         int currentLine = 0;
         int central = Integer.MAX_VALUE;
 
