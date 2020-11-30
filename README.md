@@ -1,3 +1,3 @@
 # Algorithm-Design-Y2
 
-A repository for answers/resources for a second year Algorithm Design course.
+“No tree, it is said, can grow to heaven unless its roots reach down to hell.” 
