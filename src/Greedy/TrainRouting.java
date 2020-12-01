@@ -1,6 +1,5 @@
 package Greedy;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.*;
@@ -21,9 +20,9 @@ class TrainRouting {
             String elements = scanner.nextLine();
             String[] splitted = elements.split(" ");
 
-            if(currentLine == 0) {
+            if (currentLine == 0) {
                 central = Integer.parseInt(splitted[2]);
-                for(int i = 1; i <=  Integer.parseInt(splitted[0]); i++) {
+                for (int i = 1; i <= Integer.parseInt(splitted[0]); i++) {
                     nodes.put(i, new Node(i));
                 }
             } else {
@@ -38,7 +37,7 @@ class TrainRouting {
         //Implement traversal
         Set<Node> known = new HashSet<>();
 
-        if(findCycle(nodes.get(central))){
+        if (findCycle(nodes.get(central))) {
             return "yes";
         } else {
             return "no";
@@ -52,25 +51,25 @@ class TrainRouting {
         stack.push(s);
 
 
-        while(!stack.isEmpty()) {
+        while (!stack.isEmpty()) {
             //System.out.println(stack);
 
             Node top = stack.peek();
 
-            for (Node node: top.outgoingEdges) {
+            for (Node node : top.outgoingEdges) {
 
-                if(node.marked == false) {
+                if (node.marked == false) {
                     stack.push(node);
                     node.marked = true;
                     break;
 
-                } else if(stack.contains(node)) {
+                } else if (stack.contains(node)) {
                     return true;
                 }
 
             }
 
-            if(top.equals(stack.peek())) {
+            if (top.equals(stack.peek())) {
                 stack.pop();
             }
         }
