@@ -43,7 +43,7 @@ through j + 1 items and incurs no more misses than S does
   would be needed farthest in the future; so before there could be a request to
   e, there would have to be a request to f , and then case (ii) above would apply.
         
-Q.E.D
+**Q.E.D**
 
 
 
@@ -57,6 +57,8 @@ for j = 1, 2, 3, . . . ,m, producing schedules Sj that agree with SFF through th
 first j steps. Each schedule incurs no more misses than the previous one; and
 by definition Sm = SFF , since it agrees with it through the whole sequence.
 
+
+**Q.E.D**
 
 
 
