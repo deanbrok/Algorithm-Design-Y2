@@ -1,5 +1,5 @@
 
-##Lemmas
+## Lemmas
 
 #### (1) Let S be a reduced schedule that makes the same eviction decisions as S<sub>FF</sub> through the first j items in the sequence, for a number j. Then there is a reduced schedule S<sup>'</sup> that makes the same eviction decision as S<sub>FF</sub> through the first j + 1 items, and incurs no more misses than S does.
 * Consider S = S<sub>FF</sub> for j first items and S' = S<sub>FF</sub> j+1 first items, 
