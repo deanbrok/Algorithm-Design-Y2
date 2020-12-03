@@ -1,4 +1,6 @@
-package Greedy;
+package Greedy.Level0;
+
+import Greedy.Node;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;

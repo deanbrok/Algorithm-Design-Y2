@@ -1,21 +1,10 @@
-package Greedy;
+package Greedy.Level0;
+
+import Greedy.Node;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-
-class Node {
-    int name;
-    List<Node> outgoingEdges;
-
-    boolean marked;
-
-    public Node(int i) {
-        this.name = i;
-        this.outgoingEdges = new ArrayList<>();
-        this.marked = false;
-    }
-}
 
 class Solution1 {
 
@@ -27,7 +16,7 @@ class Solution1 {
         int currentLine = 0;
         int start = Integer.MAX_VALUE;
         int end = Integer.MIN_VALUE;
-        Map<Integer,Node> nodes = new HashMap<>();
+        Map<Integer, Node> nodes = new HashMap<>();
 
         while (scanner.hasNextLine()) {
             String elements = scanner.nextLine();

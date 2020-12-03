@@ -1,4 +1,6 @@
-package Greedy;
+package Greedy.Level2;
+
+import Greedy.Interval;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package Greedy;
+package Greedy.Level1;
 
 public class PackingTruck {
 
