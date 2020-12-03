@@ -12,8 +12,6 @@ public class Dijkstra {
 
     public String solve() throws FileNotFoundException {
 
-
-       // File in = new File("C:\\Users\\Bean\\Desktop\\dataset7.in");
         InputStream input = getClass().getResourceAsStream("dataset7.in");
         Scanner sc = new Scanner(input);
         /*
