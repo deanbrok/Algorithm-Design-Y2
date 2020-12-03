@@ -51,11 +51,11 @@ through j + 1 items and incurs no more misses than S does
 ## Optimality proof: SFF incurs no more misses than any other schedule S* and hence is optimal.
 
 Using this result, it is easy to complete the proof of optimality. We begin
-with an optimal schedule S∗, and use (4.12) to construct a schedule S1 that
-agrees with SFF through the first step.We continue applying (4.12) inductively
-for j = 1, 2, 3, . . . ,m, producing schedules Sj that agree with SFF through the
+with an optimal schedule S∗, and use the Lemma above to construct a schedule S<sub>1</sub> that
+agrees with S<sub>FF</sub> through the first step. We continue applying the Lemma inductively
+for j = 1, 2, 3, . . . ,m, producing schedules S<sub>j</sub> that agree with S<sub>FF</sub> through the
 first j steps. Each schedule incurs no more misses than the previous one; and
-by definition Sm = SFF , since it agrees with it through the whole sequence.
+by definition S<sub>m</sub> =  S<sub>FF</sub>, since it agrees with it through the whole sequence.
 
 
 **Q.E.D**
