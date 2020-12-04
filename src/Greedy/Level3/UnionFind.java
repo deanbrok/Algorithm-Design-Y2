@@ -9,6 +9,9 @@ package Greedy.Level3;
  * The Union-by-Rank data structure has been partly implemented. Implement the missing find and union methods.
  */
 
+
+//Here it is the same as having nodes with pointers (as described in the book) but since the name of the node is
+//implicitly given by its place in the array, we don't need to create a new Tuple class with an explicit pointer.
 public class UnionFind {
 
     private int[] parent;
@@ -40,12 +43,15 @@ public class UnionFind {
         else if (rank[iSet] < rank[jSet])
         {
             parent[iSet] = jSet;
-            rank[jSet]++;
+
         }
         else
         {
             parent[jSet] = iSet;
-            rank[iSet] ++;
+            if(rank[iSet] == rank[jSet])
+            {
+                rank[iSet]++;
+            }
 
         }
 
